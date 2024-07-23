@@ -1,9 +1,9 @@
-# Byte-compiled / optimized / DLL files
+# Ignore pycache files
 config/__pycache__/__pycache__/
-config/Emma/__pycache__
-*.py[cod]
-*$py.class
-
+config/Emma/__pycache__/
+config/Emma/migrations/__pycache__/
+__pycache__/
+config/Emma/migrations/__pycache__/
 # C extensions
 *.so
 
