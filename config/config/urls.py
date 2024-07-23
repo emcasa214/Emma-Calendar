@@ -21,4 +21,5 @@ from Emma.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index, name='home_page'),
+    path('home/',index, name='home_page'),
 ]
