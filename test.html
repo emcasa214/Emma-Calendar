@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Button Click</title>
+    <style>
+        .sidebar button {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Some padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Make the buttons appear side by side */
+            font-size: 16px; /* Increase font size */
+            margin: 4px 2px; /* Some margin */
+            cursor: pointer; /* Pointer/hand icon */
+            transition: filter 0.3s; /* Smooth transition for the filter */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <button onclick="highlightButton(this)">Button 1</button>
+        <button onclick="highlightButton(this)">Button 2</button>
+        <button onclick="highlightButton(this)">Button 3</button>
+    </div>
+
+    <script>
+        let lastClickedButton = null;
+        function highlightButton(button) {
+            if (lastClickedButton) {
+                lastClickedButton.style.filter = "brightness(100%)";
+            }
+            button.style.filter = "brightness(50%)";
+            lastClickedButton = button;
+        }
+    </script>
+</body>
+</html>
