@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Emma.views import index
+from Emma.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index, name='home_page'),
+    path('create_task/', create_task, name='create_task'),
 ]
